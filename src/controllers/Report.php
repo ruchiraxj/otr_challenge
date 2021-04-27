@@ -81,7 +81,7 @@ class Report
 		}
 
 		try {
-			$report = new TurnoverReport(START_DATE, END_DATE, VAT_RATE, ROOT_PATH . '/reports');
+			$report = new TurnoverReport($_GET['start_date'], $_GET['end_date'], VAT_RATE, ROOT_PATH . '/reports');
 			$data = $report->generateDailyTurnoverReport();
 			return ['success' => true, 'data' => $data, 'message' => ""];
 			
