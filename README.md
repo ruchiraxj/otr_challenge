@@ -1,4 +1,4 @@
-NOTES:
+#Configurations
 
 #Report dates and Vat rates are configurable, You can configure these data by changing the values in "includes/configs/configs.php" File
 #Reports are stored in "/public/reports/" Folder
